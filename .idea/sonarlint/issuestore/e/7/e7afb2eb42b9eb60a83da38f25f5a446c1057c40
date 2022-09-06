@@ -1,0 +1,14 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(®©¾„úÿÿÿÿ
+
+java:S2681"†This line will not be executed conditionally; only the first line of this 2-line block will be. The rest will execute unconditionally.(§¼Éç
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ç¸îıÿÿÿÿ
+^
+java:S1612 "CReplace this lambda with method reference 'Book.class::isInstance'.(ôš‚­ÿÿÿÿÿ
+S	java:S106 "9Replace this use of System.out or System.err by a logger.(ôš‚­ÿÿÿÿÿ
+e
+java:S1612$"HReplace this lambda with method reference 'Newspaper.class::isInstance'.(©‰8ñî‚¯0
+U	java:S106$"9Replace this use of System.out or System.err by a logger.(©‰8òî‚¯0
+c
+java:S1612("FReplace this lambda with method reference 'Journal.class::isInstance'.(­ô‚§8³ş†¯0
+U	java:S106("9Replace this use of System.out or System.err by a logger.(­ô‚§8³ş†¯0

@@ -1,0 +1,19 @@
+
+r
+java:S1192"\Define a constant instead of duplicating this literal "===========================" 3 times.(²İ¨¦
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(„ŸŞµúÿÿÿÿ
+=
+java:S2189
+""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ƒ„òıÿÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(œÊÏ‰
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Òáëú
+S	java:S106"9Replace this use of System.out or System.err by a logger.(°Œ¢şÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ûú§·
+7	java:S131""Add a default case to this switch.(ÜŸ•
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ø•ÃË
+N	java:S106"9Replace this use of System.out or System.err by a logger.(²İ¨¦
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ê’¤Îúÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(²İ¨¦
+S	java:S106!"9Replace this use of System.out or System.err by a logger.( ú•øÿÿÿÿ
+N	java:S106#"9Replace this use of System.out or System.err by a logger.(²İ¨¦
