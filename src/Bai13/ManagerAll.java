@@ -31,7 +31,7 @@ public class ManagerAll {
     }
 
     //Ham nhap cetificate
-    private static List<Cetificate> addCerificate() throws BirthDayException {
+    private static List<Cetificate> addCerificate() {
         List<Cetificate> listCetificates = new ArrayList<>();
         System.out.println("Nhap danh sach Certificate: ");
         int n = scanner.nextInt(); scanner.nextLine();
@@ -56,7 +56,7 @@ public class ManagerAll {
     }
 
     //Ham them Experiece
-    private Experience themExperience() throws BirthDayException {
+    private Experience themExperience() {
         Experience experience = new Experience();
         System.out.print("Nhap ID:");
         String id = scanner.nextLine();
@@ -97,7 +97,7 @@ public class ManagerAll {
         return experience;
     }
     //Ham them Fresher
-    private Fresher themFresher() throws BirthDayException {
+    private Fresher themFresher() {
         Fresher fresher = new Fresher();
         System.out.print("Nhap ID:");
         String id = scanner.nextLine();
@@ -140,7 +140,7 @@ public class ManagerAll {
         return fresher;
     }
     //Ham them Intern
-    private Intern themIntern() throws BirthDayException {
+    private Intern themIntern() {
         Intern intern = new Intern();
         System.out.print("Nhap ID:");
         String id = scanner.nextLine();

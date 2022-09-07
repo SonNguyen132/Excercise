@@ -12,20 +12,25 @@ public class Main {
             System.out.println("Chuong trinh quan ly");
             System.out.println("1: Them ");
             System.out.println("2: Hien thi ");//Con thieu nhieu
-            System.out.println("3: Exit");
+            System.out.println("3: Luu file");
+            System.out.println("5: Thoat");
             Integer ch = scanner.nextInt();scanner.nextLine();
             switch (ch) {
                 case 1: {
-                    System.out.print("0. Goodstudent" + "\t 1. NormalStudent ");
-                    int type = scanner.nextInt();
+                    System.out.print("1. Goodstudent" + "\t 2. NormalStudent ");
+                    int type = scanner.nextInt();scanner.nextLine();
                     managerClassRoom.addStudent(type);
                     break;
                 }
                 case 2:{
-                    managerClassRoom.showAllInfor();
+                    managerClassRoom.showAllStudent();
                     break;
                 }
                 case 3:{
+                    managerClassRoom.inFile();
+                    break;
+                }
+                case 5:{
                     System.exit(0);
                     break;
                 }

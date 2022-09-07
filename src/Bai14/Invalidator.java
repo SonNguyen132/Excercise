@@ -18,10 +18,11 @@ public class Invalidator {
         String regex = "^[a-zA-Z]{10,50}";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(name);
-        if(matcher.find()){
-            System.out.println("Valid");
-        }else {
+        if(!matcher.find()){
             throw new InvalidFullnameException("Invalid");
+
+        }else {
+            System.out.println("Valid");
         }
     }
 
@@ -29,10 +30,11 @@ public class Invalidator {
         String regex = "^\\\\d{2}[-|/]\\\\d{2}[-|/]\\\\d{4}$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(dOB);
-        if(matcher.find()){
-            System.out.println("Valid");
-        }else {
+        if(!matcher.find()){
             throw new InvalidDOBException("Invalid");
+
+        }else {
+            System.out.println("Valid");
         }
     }
 }

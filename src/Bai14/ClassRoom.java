@@ -1,10 +1,21 @@
 package Bai14;
 
+import Bai13.Employee;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class ClassRoom {
     private List<Student> students;
+
+    public List<Student> getStudents() {
+        return students;
+    }
+
+    public void setStudents(List<Student> students) {
+        this.students = students;
+    }
+
     public ClassRoom(){
         this.students = new ArrayList<>();
     }
@@ -13,7 +24,7 @@ public class ClassRoom {
         this.students.add(student);
     }
     //Ham hien thi sinh vien
-    public void showMyInfor(){
-        this.students.forEach(s -> System.out.println(s.toString()));
+    public List<Student> show(){
+        return this.students;
     }
 }

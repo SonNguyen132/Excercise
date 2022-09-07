@@ -8,10 +8,10 @@ public class Validator {
         String regex = "^\\d{2}[-|/]\\d{2}[-|/]\\d{4}$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(birthday);
-        if(matcher.find()){
-            System.out.println("Valid");
-        } else {
+        if(!matcher.find()){
             throw new BirthDayException("Invalid");
+        } else {
+            System.out.println("Valid");
         }
 
     }
@@ -31,10 +31,10 @@ public class Validator {
         String regex = "^((090)|(098)|(091)|(031)|(035)|(038)){1}\\\\d{7}$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(phone);
-        if(matcher.find()){
-            System.out.println("Valid");
-        } else {
+        if(!matcher.find()){
             throw new PhoneException("Invalid");
+        } else {
+            System.out.println("Valid");
         }
     }
 
