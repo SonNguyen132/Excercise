@@ -2,6 +2,7 @@ package Bai13;
 
 import Bai2.ManagerDocument;
 
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -9,6 +10,11 @@ import java.util.stream.Collectors;
 
 public class EmployeeManagerment {
     private List<Employee> employees;
+
+    public void setEmployees(List<Employee> employees) {
+        this.employees = employees;
+    }
+
     public static Scanner scanner = new Scanner(System.in);
     public EmployeeManagerment(){
         this.employees = new ArrayList<>();
@@ -39,19 +45,14 @@ public class EmployeeManagerment {
         }
         return this.employees;
     }
-    public void findByExperience(){
-        this.employees.stream().filter(s -> s instanceof Experience).forEach(s -> System.out.println(s.toString()));
-    }
-    //Ham tim nhan vien Fresher
-    public void findByFresher(){
-        this.employees.stream().filter(s -> s instanceof Fresher).forEach(s -> System.out.println(s.toString()));
-    }
-    //Ham tim nhan vien Intern
-    public void findByIntern(){
-        this.employees.stream().filter(s -> s instanceof Intern).forEach(s -> System.out.println(s.toString()));
-    }
+
     //Ham tim tat ca nhan vien
     public List<Employee> findAll(){
         return this.employees;
+    }
+
+    //in ra file
+    public List<Employee> getEmployees(){
+        return employees;
     }
 }

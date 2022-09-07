@@ -1,0 +1,1 @@
+Experience{exInYear=1, proSkill='asd', id='1', fullname='son', birthday='12/12/1222', phone='+84353748864', email='son@gmail.com', employee_type=0, cetificates=[Cetificate{certificateID=12, certificateName='asfd', certificateRank='awfa', getCertificateDate='12/12/2000'}]} Bai13.Experience@254989ff

@@ -1,9 +1,10 @@
 package Bai13;
 
+import java.io.FileWriter;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws BirthDayException {
         ManagerAll managerAll = new ManagerAll();
         Scanner scanner = new Scanner(System.in);
         while (true) {
@@ -12,7 +13,8 @@ public class Main {
             System.out.println("2: Hien thi ");
             System.out.println("3: Tim kiem ");
             System.out.println("4: Xoa ");
-            System.out.println("5: Exit");
+            System.out.println("5: In ra file ");
+            System.out.println("6: Exit");
             Integer ch = scanner.nextInt();scanner.nextLine();
             switch (ch) {
                 case 1: {
@@ -29,7 +31,7 @@ public class Main {
                     break;
                 }
                 case 3:{
-
+                    managerAll.findID();
                     break;
                 }
                 case 4:{
@@ -37,6 +39,10 @@ public class Main {
                     break;
                 }
                 case 5:{
+                    managerAll.inFile();
+                    break;
+                }
+                case 6:{
                     System.exit(0);
                 }
                 default:
