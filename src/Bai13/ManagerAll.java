@@ -1,6 +1,8 @@
 package Bai13;
 
+import java.io.FileReader;
 import java.io.FileWriter;
+import java.nio.CharBuffer;
 import java.security.cert.Certificate;
 import java.util.ArrayList;
 import java.util.List;
@@ -209,6 +211,18 @@ public class ManagerAll {
             fileWriter.write(file);
             fileWriter.close();
         }catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+    public void readFile(){
+        try {
+            FileReader fileReader = new FileReader("D:\\output.txt");
+            int file ;
+            while ((file = fileReader.read()) != -1) {
+                System.out.print((char) file);
+            }
+            fileReader.close();
+        }catch (Exception e){
             System.out.println(e);
         }
     }

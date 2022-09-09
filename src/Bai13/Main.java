@@ -14,7 +14,8 @@ public class Main {
             System.out.println("3: Tim kiem ");
             System.out.println("4: Xoa ");
             System.out.println("5: In ra file ");
-            System.out.println("6: Exit");
+            System.out.println("6: Doc file ");
+            System.out.println("7: Exit");
             Integer ch = scanner.nextInt();scanner.nextLine();
             switch (ch) {
                 case 1: {
@@ -43,6 +44,10 @@ public class Main {
                     break;
                 }
                 case 6:{
+                    managerAll.readFile();
+                    break;
+                }
+                case 7:{
                     System.exit(0);
                 }
                 default:

@@ -11,7 +11,7 @@ public class Invalidator {
         if (!matcher.find()){
             throw new InvalidPhoneNumberException("Invalid");
         }
-        else System.out.println("Valid");
+//        else System.out.println("Valid");
     }
 
     public static void checkFullname(String name) throws InvalidFullnameException{
@@ -21,9 +21,10 @@ public class Invalidator {
         if(!matcher.find()){
             throw new InvalidFullnameException("Invalid");
 
-        }else {
-            System.out.println("Valid");
         }
+//        else {
+//            System.out.println("Valid");
+//        }
     }
 
     public static void checkDOB(String dOB) throws InvalidDOBException{
@@ -33,8 +34,9 @@ public class Invalidator {
         if(!matcher.find()){
             throw new InvalidDOBException("Invalid");
 
-        }else {
-            System.out.println("Valid");
         }
+//        else {
+//            System.out.println("Valid");
+//        }
     }
 }

@@ -34,16 +34,18 @@ public class EmployeeManagerment {
     }
     //Ham tim tat ca nhan vien Experience
     public List<Employee> findEmployee(int employee_type){
+        return this.employees.stream().filter(employee -> {
         if(employee_type == 0){
-            return this.employees.stream().filter(s -> s instanceof Experience).collect(Collectors.toList());
+            return employee instanceof Experience;
         }
         if (employee_type == 1) {
-            return this.employees.stream().filter(s -> s instanceof Fresher).collect(Collectors.toList());
+            return employee instanceof Fresher;
         }
         if (employee_type == 2){
-            return this.employees.stream().filter(s -> s instanceof Intern).collect(Collectors.toList());
+            return employee instanceof Intern;
         }
-        return this.employees;
+        return false;
+        }).collect(Collectors.toList());
     }
 
     //Ham tim tat ca nhan vien
@@ -51,7 +53,6 @@ public class EmployeeManagerment {
         return this.employees;
     }
 
-    //in ra file
     public List<Employee> getEmployees(){
         return employees;
     }

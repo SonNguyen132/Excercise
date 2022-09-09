@@ -13,6 +13,7 @@ public class Intern extends Employee{
                   int employee_type, List<Cetificate> cetificates,
                   String majors, String semester, String univerity_name) {
         super(id, fullname, birthday, phone, email, employee_type, cetificates);
+        employee_count ++;
         this.majors = majors;
         this.semester = semester;
         this.univerity_name = univerity_name;

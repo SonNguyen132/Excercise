@@ -8,6 +8,7 @@ public class Experience extends Employee{
 
     public Experience(String id, String fullname, String birthday, String phone, String email, int employee_type, List<Cetificate> cetificates, int exInYear, String proSkill) {
         super(id, fullname, birthday, phone, email, employee_type, cetificates);
+        employee_count ++;
         this.exInYear = exInYear;
         this.proSkill = proSkill;
     }

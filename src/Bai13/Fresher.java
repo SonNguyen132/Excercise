@@ -13,6 +13,7 @@ public class Fresher extends Employee{
                    String email, int employee_type, List<Cetificate> cetificates,
                    String graduation_date, String graduation_rank, String education) {
         super(id, fullname, birthday, phone, email, employee_type, cetificates);
+        employee_count ++;
         this.graduation_date = graduation_date;
         this.graduation_rank = graduation_rank;
         this.education = education;

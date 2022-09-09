@@ -1,7 +1,5 @@
 package Bai14;
 
-import Bai13.ManagerAll;
-
 import java.util.Scanner;
 
 public class Main {
@@ -13,6 +11,7 @@ public class Main {
             System.out.println("1: Them ");
             System.out.println("2: Hien thi ");//Con thieu nhieu
             System.out.println("3: Luu file");
+            System.out.println("4: Doc file");
             System.out.println("5: Thoat");
             Integer ch = scanner.nextInt();scanner.nextLine();
             switch (ch) {
@@ -28,6 +27,10 @@ public class Main {
                 }
                 case 3:{
                     managerClassRoom.inFile();
+                    break;
+                }
+                case 4:{
+                    managerClassRoom.readFile();
                     break;
                 }
                 case 5:{

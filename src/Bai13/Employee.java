@@ -14,6 +14,7 @@ public abstract class Employee {
 
     public Employee(String id, String fullname, String birthday, String phone,
                     String email, int employee_type, List<Cetificate> cetificates) {
+        employee_count ++;
         this.id = id;
         this.fullname = fullname;
         this.birthday = birthday;
